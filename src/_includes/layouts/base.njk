@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if title and title != "Home" %}{{ title }} · {% endif %}{{ site.fullName }}</title>
+<meta name="description" content="{{ description }}">
+{% if page.url != "/404.html" %}<link rel="canonical" href="{{ site.url }}{{ page.url }}">{% endif %}
+<meta property="og:type" content="{{ 'profile' if page.url == '/' else 'website' }}">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:title" content="{{ title if title != 'Home' else site.fullName }}">
+<meta property="og:description" content="{{ description }}">
+{% if page.url != "/404.html" %}<meta property="og:url" content="{{ site.url }}{{ page.url }}">{% endif %}
+<meta property="og:image" content="{{ site.url }}{{ ogImage.url }}">
+<meta property="og:image:width" content="{{ ogImage.width }}">
+<meta property="og:image:height" content="{{ ogImage.height }}">
+<meta property="og:image:alt" content="Portrait of Olivier White">
+<meta name="twitter:card" content="summary">
+<meta name="color-scheme" content="light dark">
+<script>(function(){var d=document.documentElement;d.className+=' js';try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')d.setAttribute('data-theme',t)}catch(e){}})();</script>
+<link rel="preload" href="/fonts/source-sans-3-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/source-serif-4-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/site.css">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script src="/js/site.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="page">
+<header class="sidebar">
+<div class="topbar">
+<a class="brand" href="/">{{ site.name }}</a>
+<button type="button" class="menu-button" aria-controls="site-menu" aria-expanded="false" aria-label="Open menu">
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14"/></svg>
+</button>
+</div>
+<div class="identity">
+<img src="/assets/images/{{ images.portrait.file }}" alt="{{ images.portrait.alt }}" class="portrait" sizes="220px" loading="eager" fetchpriority="high" style="object-position: {{ images.portrait.position }}">
+<p class="name"><a href="/">{{ site.name }}</a></p>
+<p class="credentials">{{ site.credentials }}<br>{{ site.role }}<br>{{ site.affiliation }}</p>
+</div>
+<div class="menu" id="site-menu">
+<nav aria-label="Main">
+<ul>
+{%- for item in site.nav %}
+<li><a href="{{ item.href }}"{% if item.href == page.url %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+{%- endfor %}
+</ul>
+</nav>
+<ul class="profile-links">
+<li><a href="{{ site.cv.href }}">{{ site.cv.label }}</a></li>
+{%- for p in site.profiles %}
+<li><a href="{{ p.href }}">{{ p.label }}</a></li>
+{%- endfor %}
+</ul>
+<button type="button" class="theme-toggle">
+<svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.25" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.75a6.25 6.25 0 0 1 0 12.5z" fill="currentColor"/></svg>
+<span>Switch theme</span>
+</button>
+</div>
+</header>
+<main id="main" tabindex="-1">
+{{ content | safe }}
+<footer class="site-footer">© {{ build.date.getFullYear() }} {{ site.name }} · Last updated {{ build.date | monthYear }}</footer>
+</main>
+</div>
+</body>
+</html>

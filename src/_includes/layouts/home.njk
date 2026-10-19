@@ -1,0 +1,44 @@
+---
+layout: layouts/base.njk
+---
+<article class="content home">
+<section class="intro">
+<div class="phone-identity">
+<img src="/assets/images/{{ images.portrait.file }}" alt="{{ images.portrait.alt }}" sizes="92px" loading="eager" style="object-position: {{ images.portrait.position }}">
+<p>{{ site.credentials }}<br>{{ site.role }}<br>{{ site.affiliation }}</p>
+</div>
+<h1>{{ heading }}</h1>
+{{ content | safe }}
+<ul class="phone-links">
+<li><a href="{{ site.cv.href }}">{{ site.cv.shortLabel }}</a></li>
+{%- for p in site.profiles %}
+<li><a href="{{ p.href }}">{{ p.label }}</a></li>
+{%- endfor %}
+</ul>
+</section>
+
+<section aria-labelledby="themes" class="wide">
+<h2 id="themes">Research themes</h2>
+<ul class="theme-cards">
+{%- for t in home.themes %}
+{%- set img = images[t.image] %}
+<li><a href="{{ t.href }}">
+<img src="/assets/images/{{ img.file }}" alt="{{ img.alt }}" sizes="(min-width: 760px) 260px, 100vw"{% if img.position %} style="object-position: {{ img.position }}"{% endif %}>
+<span class="card-title">{{ t.title }}</span>
+<span class="card-text">{{ t.text }}</span>
+</a></li>
+{%- endfor %}
+</ul>
+</section>
+
+<section aria-labelledby="news">
+<h2 id="news">News</h2>
+<ul class="news">
+{%- for n in news %}
+<li><span class="news-year">{{ n.year }}</span><span>{{ n.text | mdInline | safe }}</span></li>
+{%- endfor %}
+</ul>
+</section>
+
+<p class="beyond">{{ home.beyond | mdInline | safe }}</p>
+</article>

@@ -1,0 +1,23 @@
+# Photos used on the site: file in assets/images/, alt text (read aloud by screen readers)
+# and caption (shown under the photo). "position" sets the crop focus (optional).
+portrait:
+  file: portrait.jpg
+  alt: Portrait of Olivier White
+  position: center 30%
+bimanual:
+  file: bimanual-vr-setup.jpg
+  alt: Operating the immersive bimanual Phantom VR setup
+  caption: Immersive bimanual Phantom VR setup, School of Psychology, Bangor University (UK).
+parabolic:
+  file: parabolic-flight-esa.jpg
+  alt: Inside the parabolic-flight aircraft, a participant holds an instrumented object at the experimental set-up
+  caption: On board an ESA parabolic-flight campaign.
+centrifuge:
+  file: centrifuge.jpg
+  alt: Olivier White seated in a centrifuge gondola
+  caption: In the gondola of the human centrifuge, Linköping (Sweden), 2013.
+  position: center 40%
+topicalTeam:
+  file: topical-team.jpg
+  alt: Members of an ESA Topical Team on a lawn, Dijon, 2012
+  caption: ESA Topical Team meeting, Faculty of Sports Sciences, Dijon, 2012.

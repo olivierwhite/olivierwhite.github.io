@@ -1,0 +1,14 @@
+# Collaborators by country (Research page). "flag" is the two-letter country code.
+- { country: Austria, flag: at, people: "N. Goswami (Medical University of Graz)" }
+- { country: Belgium, flag: be, people: "N. Boulanger, F. Buisseret (University of Mons); J.-L. Thonnard, P. Lefèvre, F. Crevecoeur, E. Olivier (UCLouvain); M. Davare (KU Leuven)" }
+- { country: Canada, flag: ca, people: "J. Diedrichsen (Western University); G. Blohm (Queen's University)" }
+- { country: France, flag: fr, people: "L. Bringoux (Aix-Marseille University)" }
+- { country: Germany, flag: de, people: "J. Hermsdörfer (TU Munich); C. Trenado (TU Dortmund)" }
+- { country: Israel, flag: il, people: "A. Karniel, I. Nisky (Ben-Gurion University of the Negev)" }
+- { country: Italy, flag: it, people: "L. Fadiga (Istituto Italiano di Tecnologia); F. Pagnini (Università Cattolica del Sacro Cuore)" }
+- { country: Japan, flag: jp, people: "D. Nozaki (University of Tokyo)" }
+- { country: Kazakhstan, flag: kz, people: "A. Gutoreva (Kazakh-British Technical University)" }
+- { country: Luxembourg, flag: lu, people: "F. Dierick (Rehazenter)" }
+- { country: Slovenia, flag: si, people: "J. Babič (Jožef Stefan Institute)" }
+- { country: United Kingdom, flag: gb, people: "A. Wing (Birmingham); E. Ferrè (Birkbeck, University of London)" }
+- { country: United States, flag: us, people: "N. Stergiou (University of Nebraska Omaha); V. Gritsenko (West Virginia University); W. Paloski (NASA)" }

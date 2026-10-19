@@ -1,0 +1,22 @@
+{
+  "name": "olivier-white-website",
+  "private": true,
+  "description": "Personal academic website of Olivier White",
+  "type": "module",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "node scripts/fetch-publications.js && eleventy",
+    "pubs": "node scripts/fetch-publications.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.6",
+    "@11ty/eleventy-img": "7.0.0",
+    "@fontsource/source-sans-3": "5.3.0",
+    "@fontsource/source-serif-4": "5.3.0",
+    "flag-icons": "7.5.0",
+    "js-yaml": "5.4.2"
+  }
+}

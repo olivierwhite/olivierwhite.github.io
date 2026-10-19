@@ -1,0 +1,1 @@
+<ul class="dated-list">{% for d in distinctions %}<li><span class="news-year">{{ d.year }}</span><span>{{ d.text | mdInline | safe }}</span></li>{% endfor %}</ul>

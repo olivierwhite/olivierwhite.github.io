@@ -1,0 +1,16 @@
+# Home page blocks (the introduction text is in src/index.md).
+themes:
+  - title: Motor control and learning
+    text: Internal models, object manipulation, redundancy, multisensory learning.
+    image: bimanual
+    href: /research/#axis1
+  - title: Graviception
+    text: How the brain represents gravity and exploits it to control action.
+    image: parabolic
+    href: /research/#axis2
+  - title: Functional variability
+    text: Why some noise in movement helps rather than hurts.
+    image: centrifuge
+    href: /research/#axis3
+
+beyond: "**Beyond the lab.** Before all this, I cycled 6,000 km across the United States, from Washington DC to San Francisco, and co-wrote a book about it, *L'Amérique à 12 vitesses*."

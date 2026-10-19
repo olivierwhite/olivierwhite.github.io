@@ -1,0 +1,7 @@
+{%- macro reference(p, italicJournal=true) -%}
+{{ p.authors | authorsHtml | safe }}{% if p.year %} ({{ p.year }}){% endif %}. {{ p.title | mdInline | safe }}{% if not (p.title | endsWithPunct) %}.{% endif %}
+{% if p.venue %} {% if italicJournal and p.journal %}<i>{{ p.journal }}</i>{% if p.details %} {{ p.details }}{% endif %}{% else %}{{ p.venue | mdInline | safe }}{% endif %}.{% endif %}
+{%- for n in p.notes %} ({{ n | mdInline | safe }}){% endfor %}
+{%- if p.doi %} <a class="doi" href="https://doi.org/{{ p.doi }}">doi:{{ p.doi }}</a>{% endif %}
+{%- if p.openAccess %} <span class="badge">Open access</span>{% endif %}
+{%- endmacro -%}

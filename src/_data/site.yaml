@@ -1,0 +1,31 @@
+# Identity and links shown on every page.
+name: Olivier White
+fullName: Olivier White, Ir, PhD, HDR
+credentials: Ir, PhD, HDR
+role: Associate Professor in Computational Neuroscience
+affiliation: Université Bourgogne Europe · INSERM U1093 CAPS, Dijon
+# Public address of the site (no trailing slash). Change it if a custom domain is added.
+url: https://olivierwhite.github.io
+lang: en
+
+cv:
+  label: CV (PDF, October 2026)
+  shortLabel: CV (PDF)
+  href: /assets/cv/White_CV_2026.pdf
+
+profiles:
+  - label: Google Scholar
+    href: https://scholar.google.com/citations?user=RKX7XowAAAAJ&hl=en
+  - label: ORCID
+    href: https://orcid.org/0000-0002-9119-1329
+  - label: LinkedIn
+    href: https://www.linkedin.com/in/olivier-white-4201a22/
+
+nav:
+  - { label: Home, href: / }
+  - { label: Research, href: /research/ }
+  - { label: Publications, href: /publications/ }
+  - { label: Team, href: /team/ }
+  - { label: Teaching, href: /teaching/ }
+  - { label: "Service & Expertise", href: /service/ }
+  - { label: Contact, href: /contact/ }

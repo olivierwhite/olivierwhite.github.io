@@ -1,0 +1,21 @@
+node_modules/
+_site/
+.cache/
+
+# CVs: only the cleaned public version may be committed and published.
+src/assets/cv/*
+!src/assets/cv/README.txt
+!src/assets/cv/White_CV_2026.pdf
+
+# Original photos (not used by the site)
+src/assets/originals/
+
+# Session hand-off notes and check scripts (not published)
+.handoff/
+RESUME.md
+
+# Phase-1 reference material: kept locally, not in the public repository
+CLAUDE.md
+content/pages.md
+mockups/
+docs/kit/

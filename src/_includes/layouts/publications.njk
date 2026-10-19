@@ -1,0 +1,97 @@
+---
+layout: layouts/base.njk
+---
+{%- from "pub.njk" import reference -%}
+<article class="content publications">
+<h1>{{ title }}</h1>
+<section class="lead">
+{{ content | safe }}
+<p class="metrics">Citation metrics: {% for p in site.profiles %}{% if p.label != "LinkedIn" %}{% if not loop.first %} · {% endif %}<a href="{{ p.href }}">{{ p.label }}</a>{% endif %}{% endfor %}</p>
+<nav aria-label="On this page" class="on-this-page">
+<a href="#selected">Selected papers</a>
+<a href="#forthcoming">In press and under review</a>
+<a href="#articles">All articles</a>
+<a href="#thesis">PhD thesis</a>
+<a href="#chapters">Book chapters</a>
+<a href="#talks">Selected talks</a>
+</nav>
+</section>
+
+<section aria-labelledby="selected">
+<h2 id="selected">Selected papers</h2>
+<ul class="pub-list selected">
+{%- for s in selectedPapers %}
+{%- set p = publications.find(s.title) %}
+<li><p>{{ s.citation | mdInline | boldName | safe }}{% if p and p.doi %} <a class="doi" href="https://doi.org/{{ p.doi }}">doi:{{ p.doi }}</a>{% endif %}{% if p and p.openAccess %} <span class="badge">Open access</span>{% endif %}</p>
+<p class="why">{{ s.why }}</p></li>
+{%- endfor %}
+</ul>
+</section>
+
+<section aria-labelledby="forthcoming">
+<h2 id="forthcoming">In press and under review</h2>
+<h3>In press</h3>
+<ul class="pub-list">
+{%- for p in publications.inPress %}
+<li>{{ p.authors | authorsHtml | safe }}. {{ p.title | mdInline | safe }} <i>{{ p.venue.split(",")[0] }}</i>{{ p.venue | replace(p.venue.split(",")[0], "") }}.</li>
+{%- endfor %}
+</ul>
+<h3>Under review</h3>
+<ul class="pub-list">
+{%- for p in publications.underReview %}
+<li>{{ reference(p, false) }}</li>
+{%- endfor %}
+</ul>
+</section>
+
+<section aria-labelledby="articles">
+<h2 id="articles">All articles</h2>
+<p class="pub-count">{{ publications.count }} articles, newest first.</p>
+<nav aria-label="Years" class="year-nav">
+{%- for g in publications.byYear %}<a href="#y{{ g.year }}">{{ g.year }}</a>{% endfor %}
+</nav>
+{%- for g in publications.byYear %}
+<h3 id="y{{ g.year }}">{{ g.year }}</h3>
+<ul class="pub-list">
+{%- for p in g.items %}
+<li>{{ reference(p) }}</li>
+{%- endfor %}
+</ul>
+{%- endfor %}
+</section>
+
+<section aria-labelledby="thesis">
+<h2 id="thesis">PhD thesis</h2>
+<ul class="pub-list">
+{%- for p in publications.thesis %}
+<li>{{ reference(p, false) }}</li>
+{%- endfor %}
+</ul>
+</section>
+
+<section aria-labelledby="chapters">
+<h2 id="chapters">Book chapters and edited volumes</h2>
+<ul class="pub-list">
+{%- for p in publications.chapters %}
+<li>{{ reference(p, false) }}</li>
+{%- endfor %}
+</ul>
+</section>
+
+<section aria-labelledby="talks">
+<h2 id="talks">Selected talks</h2>
+<h3>Invited and keynote</h3>
+<ul class="pub-list dated">
+{%- for t in publications.invitedTalks %}
+<li><span class="news-year">{{ t.year }}</span><span>{{ t.text | mdInline | linkify | safe }}</span></li>
+{%- endfor %}
+</ul>
+<h3>Conference talks (selection)</h3>
+<ul class="pub-list">
+{%- for p in publications.conferenceTalks %}
+<li>{{ reference(p, false) }}</li>
+{%- endfor %}
+</ul>
+<p class="pub-note">The full list of posters is in the <a href="{{ site.cv.href }}">CV (PDF)</a>.</p>
+</section>
+</article>

@@ -1,0 +1,27 @@
+# Selected papers at the top of the Publications page.
+# "citation" is shown as written (*asterisks* = italics); "why" is the one-line comment.
+# The DOI link is added automatically when the title matches an entry of content/publications.md.
+- citation: "White O & Diedrichsen J (2010). Responsibility assignment in redundant systems. *Current Biology* 20(14):1290–1295."
+  title: Responsibility assignment in redundant systems
+  why: How the nervous system shares corrections across a redundant body.
+- citation: "Diedrichsen J, White O, Newman D, Lally N (2010). Use-dependent and error-based learning of motor behaviors. *Journal of Neuroscience* 30(15):5159–5166."
+  title: Use-dependent and error-based learning of motor behaviors
+  why: Separates learning from repetition and learning from error.
+- citation: "White O, Gaveau J, Bringoux L, Crevecoeur F (2020). The gravitational imprint on sensorimotor planning and control. *Journal of Neurophysiology* 124(1):4–19."
+  title: The gravitational imprint on sensorimotor planning and control
+  why: Review of how gravity shapes motor planning.
+- citation: "Rousseau C, Barbiero M, Pozzo T, Papaxanthis C, White O (2020). Actual and imagined movements reveal a dual role of the insular cortex for motor control. *Cerebral Cortex*."
+  title: Actual and imagined movements reveal a dual role of the insular cortex for motor control
+  why: fMRI evidence for two insular roles in processing gravity.
+- citation: "Kunavar T, Jamšek M, Barbiero M, Blohm G, Nozaki D, Papaxanthis C, Babič J, White O (2021). Effects of local gravity compensation on motor control during altered environmental gravity. *Frontiers in Neural Circuits* 15:750267."
+  title: Effects of local gravity compensation on motor control during altered environmental gravity
+  why: A robot restoring Earth-like gravity at the hand during parabolic flight.
+- citation: "White O, Dehouck V, Boulanger N, Dierick F, Babič J, Goswami N, Buisseret F (2024). Resonance tuning of rhythmic movements is disrupted at short time scales: a centrifuge study. *iScience* 27(5)."
+  title: "Resonance tuning of rhythmic movements is disrupted at short time scales: a centrifuge study"
+  why: Stress and gravity act jointly on rhythmic movement.
+- citation: "Goswami N, Blaber A, Valenti G, Hinghofer-Szalkay H, Evans J, Bailey D, Vernikos J, Chouker A, Green DA, White O, van Loon JJWA, Convertino VA (2026). Gravity, microgravity, and artificial gravity: physiological effects, implementation, and applications. *Physiological Reviews* 106(2):750–839."
+  title: "Gravity, microgravity, and artificial gravity: physiological effects, implementation, and applications"
+  why: Reference review; sensorimotor sections.
+- citation: "White O (2026). Crosstalk between auditory and visual information in motor learning and savings. *European Journal of Neuroscience* 63(7):e70502."
+  title: Crosstalk between auditory and visual information in motor learning and savings
+  why: Multisensory feedback, retention and generalisation.
