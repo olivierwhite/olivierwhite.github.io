@@ -1,7 +1,9 @@
 # Olivier White — personal academic website
 
 Static site built with [Eleventy](https://www.11ty.dev/) and published on GitHub Pages
-at **https://olivierwhite.github.io**. No database, no tracker, no client-side framework.
+at **https://olivierwhite.github.io**. No database, no cookies, no client-side framework. Visits are counted with
+[GoatCounter](https://www.goatcounter.com/) (cookie-less), turned on by the `goatcounter`
+setting in `src/_data/site.yaml`.
 
 ## Where things are
 

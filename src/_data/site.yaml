@@ -7,6 +7,9 @@ affiliation: Université Bourgogne Europe · INSERM U1093 CAPS, Dijon
 # Public address of the site (no trailing slash). Change it if a custom domain is added.
 url: https://olivierwhite.github.io
 lang: en
+# GoatCounter (cookie-less analytics). Put the site code here, e.g. "olivierwhite"
+# for https://olivierwhite.goatcounter.com. Leave empty to turn analytics off.
+goatcounter: "olivierwhite"
 
 cv:
   label: CV (PDF, October 2026)
