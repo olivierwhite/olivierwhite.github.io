@@ -43,6 +43,10 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "node_modules/@fontsource/source-sans-3/files/source-sans-3-latin*-{400,600}-normal.woff2": "fonts" });
   eleventyConfig.addPassthroughCopy({ "node_modules/@fontsource/source-sans-3/files/source-sans-3-latin*-400-italic.woff2": "fonts" });
   eleventyConfig.addPassthroughCopy({ "node_modules/@fontsource/source-serif-4/files/source-serif-4-latin*-600-normal.woff2": "fonts" });
+  // SYNOISE Variability Lab: a self-contained page (minified KaTeX contains {{, {% and {#),
+  // copied byte for byte and never read as a template.
+  eleventyConfig.addPassthroughCopy({ "src/synoise-lab": "synoise-lab" });
+  eleventyConfig.ignores.add("src/synoise-lab/**");
   for (const code of FLAGS) {
     eleventyConfig.addPassthroughCopy({ [`node_modules/flag-icons/flags/4x3/${code}.svg`]: `assets/flags/${code}.svg` });
   }

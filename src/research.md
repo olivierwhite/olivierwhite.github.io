@@ -76,6 +76,8 @@ We quantify this with the Hurst exponent (predictability) and the fractal dimens
 
 <span class="item-title">SYNOISE</span> — an international consortium on the functional role of biological variability, from cells to behaviour, with physicists (Mons) and neurobiologists (Turin). Preparation supported by an ANR MRSEI grant (2025).
 
+To make these measures tangible, I built an interactive [simulator](/synoise-lab/): choose a target value for any of 26 variability indices, see the smallest change to a time series that reaches it, and watch how the other 25 indices respond. It runs entirely in the browser.
+
 <figure class="synoise">
 <div class="synoise-wide">{% inlineSvg "synoise-variability.svg", "Complexity peaks between rigid order and pure randomness; a structured, 1/f-like trace sits at the peak, and the same signature is shown for neurons, networks, movement and learning", "synoise-wide" %}</div>
 <div class="synoise-tall">{% inlineSvg "synoise-variability-mobile.svg", "Complexity peaks between rigid order and pure randomness; a structured, 1/f-like trace sits at the peak, and the same signature is shown for neurons, networks, movement and learning", "synoise-tall" %}</div>
