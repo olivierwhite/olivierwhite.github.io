@@ -51,7 +51,7 @@ export function parseReference(line) {
   }
 
   // Title ends at the first ". " or "? " (a question mark stays in the title).
-  // An italic placeholder (the embargoed PNAS paper) is kept as written.
+  // An italic placeholder title (e.g. a paper whose title is not yet public) is kept as written.
   const placeholder = rest.match(/^(\*[^*]+\*)\s*(.*)$/);
   const t = placeholder || rest.match(/^(.*?[.?])(?:\s+|$)(.*)$/);
   if (placeholder) {

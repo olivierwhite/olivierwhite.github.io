@@ -47,8 +47,8 @@ searched by title and first author and accepted only if exactly one record match
 is listed as written, without a DOI link, and named in the report. Your text is never changed:
 differences with Crossref are only reported.
 
-For the PNAS paper under embargo: when it is published, replace the in-press line with the full
-reference under its year, and remove it from "In press".
+When a paper in press is published, replace its in-press line with the full reference under its
+year, and remove it from "In press".
 
 **Change a photo caption.** Edit `src/_data/images.yaml`; the caption changes everywhere the photo is used.
 
