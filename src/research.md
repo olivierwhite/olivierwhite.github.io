@@ -51,7 +51,7 @@ With N. Goswami (Graz), I extended this theme to interactions between the motor 
 
 <div class="key-papers">
 
-**Key papers:** White et al., *J Neurophysiol* 2020 (review) · Gritsenko et al., *PNAS* (in press) · Kunavar et al., *Front Neural Circuits* 2021 · Rousseau et al., *Cereb Cortex* 2020 · Barbusse et al., *J Neurophysiol* 2026 · Goswami et al., *Physiol Rev* 2026
+**Key papers:** White et al., *J Neurophysiol* 2020 (review) · Gritsenko et al., *PNAS* 2026 · Kunavar et al., *Front Neural Circuits* 2021 · Rousseau et al., *Cereb Cortex* 2020 · Barbusse et al., *J Neurophysiol* 2026 · Goswami et al., *Physiol Rev* 2026
 
 </div>
 </section>

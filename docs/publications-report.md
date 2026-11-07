@@ -1,9 +1,9 @@
 # Publications: Crossref report
 
-Generated 2026-10-19 by `npm run pubs` from `content/publications.md`. Nothing in publications.md has been changed; decide each point and edit that file if needed.
+Generated 2026-11-07 by `npm run pubs` from `content/publications.md`. Nothing in publications.md has been changed; decide each point and edit that file if needed.
 
-- Items checked: 59 (58 published articles + edited volume with DOI)
-- DOI written in publications.md: 19
+- Items checked: 60 (59 published articles + edited volume with DOI)
+- DOI written in publications.md: 20
 - DOI found on Crossref (unambiguous match): 34
 - Without a confident DOI (listed from the text as given, no DOI link): 6
 

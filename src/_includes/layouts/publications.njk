@@ -30,12 +30,14 @@ layout: layouts/base.njk
 
 <section aria-labelledby="forthcoming">
 <h2 id="forthcoming">In press and under review</h2>
+{%- if publications.inPress.length %}
 <h3>In press</h3>
 <ul class="pub-list">
 {%- for p in publications.inPress %}
 <li>{{ p.authors | authorsHtml | safe }}. {{ p.title | mdInline | safe }} <i>{{ p.venue.split(",")[0] }}</i>{{ p.venue | replace(p.venue.split(",")[0], "") }}.</li>
 {%- endfor %}
 </ul>
+{%- endif %}
 <h3>Under review</h3>
 <ul class="pub-list">
 {%- for p in publications.underReview %}

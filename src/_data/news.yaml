@@ -1,6 +1,6 @@
 # News on the Home page, newest first. One item per line: year, then the text.
 # Use *asterisks* for italics (journal names).
-- { year: 2026, text: "Paper with V. Gritsenko, J. Babič and colleagues accepted in *PNAS*." }
+- { year: 2026, text: "Paper with V. Gritsenko, J. Babič and colleagues published in *PNAS*: parabolic flight dissociates gravity from limb dynamics in the control of arm movements." }
 - { year: 2026, text: "Talk at the COSPAR Scientific Assembly, Florence." }
 - { year: 2026, text: "Appointed Section Editor-in-Chief, “Behavioural Biology”, *Biology* (MDPI)." }
 - { year: 2026, text: "Review on gravity, microgravity and artificial gravity published in *Physiological Reviews*." }

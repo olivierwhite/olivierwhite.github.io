@@ -6,12 +6,11 @@ for items without a DOI, the build script looks it up on Crossref (title + first
 accepts only an unambiguous match. Never change authors, titles or years silently: report
 discrepancies to Olivier.
 
-59 published items (58 articles + the 2007 PhD thesis, which is shown separately).
+60 published items (59 articles + the 2007 PhD thesis, which is shown separately).
 
 ## In press
 
-- Gritsenko V, Kunavar T, Jamšek M, McKendall MJ, White O, Babič J. *Title and summary added at publication (embargo).* PNAS, in press.
-  → Show exactly this. Do not display any title.
+(none at present)
 
 ## Under review (show as "Under review", no journal name unless given)
 
@@ -24,6 +23,7 @@ discrepancies to Olivier.
 ## Published
 
 ### 2026
+- Gritsenko V, Kunavar T, Jamšek M, Yakovenko S, White O, Babič J. (2026). Dissociation of gravity and limb dynamics in motor control. Proc Natl Acad Sci USA 123(45), e2613283123. doi:10.1073/pnas.2613283123
 - White O. (2026). Crosstalk between auditory and visual information in motor learning and savings. Eur J Neurosci 63(7), e70502. doi:10.1111/ejn.70502
 - Barbusse D, Amoura S, Gaveau J, White O. (2026). Feedback-driven adaptation of gravity-related sensorimotor control to an upside-down posture. J Neurophysiol 135(5), 1099–1108. doi:10.1152/jn.00566.2024
 - Stead TE, Cvirn G, De Boever P, Bergauer A, Green DA, White O, Arron HE, Blaber AP, Goswami N. (2026). Blood coagulability changes in females exposed to dry immersion: examining a mechanism for the development of venous thromboembolism in microgravity. Acta Astronautica 240, 99–105.
@@ -156,4 +156,4 @@ discrepancies to Olivier.
 - Physiological Reviews: 2026, 106(2), 750–839, 12 authors, new title (not the 2025 / 9-author version on the old site).
 - European Journal of Neuroscience 2026: published, title "Crosstalk between auditory and visual information…" (not "under review").
 - Eur Phys J C 2019: first author is Boulanger **N** (the CV's "Boulanger F" is a typo).
-- Gritsenko et al.: in press at PNAS, title under embargo.
+- Gritsenko et al.: published in PNAS on 3 November 2026 (embargo lifted). Authors as in the published version (Crossref): Yakovenko S is fourth author; McKendall MJ, listed in the in-press entry, is not an author.

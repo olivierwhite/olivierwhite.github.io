@@ -1,4 +1,28 @@
 {
+  "2326bf10d1": {
+    "line": "Gritsenko V, Kunavar T, Jamšek M, Yakovenko S, White O, Babič J. (2026). Dissociation of gravity and limb dynamics in motor control. Proc Natl Acad Sci USA 123(45), e2613283123. doi:10.1073/pnas.2613283123",
+    "status": "given",
+    "doi": "10.1073/pnas.2613283123",
+    "crossref": {
+      "doi": "10.1073/pnas.2613283123",
+      "title": "Dissociation of gravity and limb dynamics in motor control",
+      "firstAuthor": "Gritsenko",
+      "authors": "Gritsenko V, Kunavar T, Jamšek M, Yakovenko S, White O, Babič J",
+      "authorCount": 6,
+      "journal": "Proceedings of the National Academy of Sciences",
+      "shortJournal": "Proc. Natl. Acad. Sci. U.S.A.",
+      "volume": "123",
+      "issue": "45",
+      "page": "",
+      "articleNumber": "e2613283123",
+      "yearIssued": 2026,
+      "yearPrint": 2026,
+      "yearOnline": 2026,
+      "type": "journal-article",
+      "openAccess": true
+    },
+    "checkedAt": "2026-11-07"
+  },
   "800f9d4c90": {
     "line": "White O. (2026). Crosstalk between auditory and visual information in motor learning and savings. Eur J Neurosci 63(7), e70502. doi:10.1111/ejn.70502",
     "status": "given",
